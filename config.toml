@@ -1,3 +1,81 @@
-baseURL = 'https://blog.asterix.cloud/'
-languageCode = 'en-us'
-title = 'Asterix Village'
+baseurl = "https://blog.asterix.cloud"
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 5
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "post"
+  # "light" or "dark"
+  defaultTheme = "dark"
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 3
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "asterix village"
+    subtitle = "free space to download ideas.."
+    keywords = ""
+    copyright = "&copy; Copyright 2022 - asterix24@gmail.com"
+    menuMore = "Show more"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      logoText = "asterix village"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "isokey"
+        name = "IsoKey"
+        url = "/isokey"
+
+  [languages.it]
+    title = "asterix village"
+    subtitle = "A simple theme for Hugo"
+    keywords = ""
+    copyright = "<p>&copy; Copyright 2022 <asterix24@gmail.com></p>"
+    menuMore = "Altro.."
+    writtenBy = "Autore"
+    readMore = "Continua"
+    readOtherPosts = "Leggi altri aritcoli"
+    newerPosts = "Post recenti"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.it.params.logo]
+      logoText = "asterix village"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.it.menu]
+      [[languages.it.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.it.menu.main]]
+        identifier = "isokey"
+        name = "IsoKey"
+        url = "/isokey"
