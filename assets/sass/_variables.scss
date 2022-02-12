@@ -9,3 +9,21 @@ $dark-color: black;
     margin: 10px;
 }
 
+.nav_intro {
+    margin: 20px auto;
+    a {
+        background: $primary-accent-color;
+        padding: 6px;
+        color: $light-color;
+        text-decoration: none;
+        border-radius: 3px;
+        margin: 5px;
+    }
+    a:hover {
+        background: #fff;
+        padding: 4px;
+        color: $primary-accent-color;
+        text-decoration: none;
+        border: 2px solid $primary-accent-color;
+    }
+}
