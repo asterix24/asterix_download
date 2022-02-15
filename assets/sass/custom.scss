@@ -1,0 +1,49 @@
+@import 'variables';
+
+@font-face {
+	font-family: "FantasqueRegular";
+	src: local("Fantasque Sans Mono Regular Nerd Font Complete.ttf"), url('/fonts/Fantasque Sans Mono Regular Nerd Font Complete.ttf');
+}
+
+@font-face {
+	font-family: "FantasqueBold";
+	src: local("Fantasque Sans Mono Bold Nerd Font Complete.ttf"),
+    url('/fonts/Fantasque Sans Mono Bold Nerd Font Complete.ttf');
+}
+
+@font-face {
+	font-family: "FantasqueItalic";
+	src: local("Fantasque Sans Mono Italic Nerd Font Complete.ttf"),
+    url('/fonts/Fantasque Sans Mono Italic Nerd Font Complete.ttf');
+}
+
+html{
+    font-family:'FantasqueRegular', "Gill Sans Extrabold", sans-serif;
+}
+
+body {
+    font-size: calc(0.8em + 0.22vw);
+    word-spacing: -0.2em;
+}
+
+.post-title {
+    font-family:'FantasqueBold', sans-serif;
+    word-spacing: -0.2em;
+}
+
+.intro-quote {
+    font-family:'FantasqueItalic', sans-serif;
+    word-spacing: -0.2em;
+}
+
+.well h3{
+    font-family:'FantasqueBold', sans-serif;
+    word-spacing: -0.2em;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+
