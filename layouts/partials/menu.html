@@ -1,6 +1,6 @@
-<div class="nav_intro">
-        {{- $currentPage := . -}}
-        {{ range .Site.Menus.main -}}
-            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-        {{- end }}
+<div class="custom-nav">
+  {{- $currentPage := . -}}
+  {{ range .Site.Menus.main -}}
+  <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+  {{- end }}
 </div>

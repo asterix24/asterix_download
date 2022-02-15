@@ -47,3 +47,24 @@ body {
   margin: 10px;
 }
 
+.custom-nav {
+    margin: 20px auto;
+    background: $primary-accent-color;
+    width: 100%;
+    a {
+        background: $primary-accent-color;
+        padding: 10px;
+        color: $light-color;
+        text-decoration: none;
+        border-radius: 3px;
+        margin: 5px;
+    }
+    a:hover {
+        background: #fff;
+        padding: 8px;
+        color: $primary-accent-color;
+        text-decoration: none;
+        border: 2px solid $primary-accent-color;
+    }
+}
+

@@ -2,10 +2,11 @@
 <div class="intro" style="align-items: center">
   {{if .Site.Params.main.enabled }}
   <img
-    class="image_intro"
-    src="https://source.unsplash.com/random/750x150/?flower,abstract,electronic"
+    class="image"
+    src="{{ .Site.Params.main.img | absURL }}"
     title="{{	.Site.Params.main.img_title }}"
-    alt=".. random image .."
+    width="200px"
+    alt="Author's picture or avatar or logo"
   />
   <ul>
     <li class="intro-quote">{{ .Site.Params.main.quote }}</li>
@@ -13,5 +14,4 @@
   {{ end }}
   <p>{{ .Site.Params.main.description | safeHTML }}</p>
 </div>
-{{ partial "menu.html" . }}
 {{ end }}
