@@ -28,7 +28,7 @@ metaDataFormat= "yaml"
 [params.main]
   enabled = true
   enableKatex = true
-  metaKeywords = "fast, hugo, theme, minimal, gruvbox"
+  metaKeywords = ""
   headerTitle = "asterix village"
   copyright = "© Copyright 2022 asterix24@gmail.com"
   name = "asterix"
@@ -60,7 +60,7 @@ metaDataFormat= "yaml"
   # add path to custom CSS files here
   custom_css = []
   # add path to custom SCSS files here
-  custom_scss = []
+  custom_scss = ['sass/custom.scss']
 
 [menu]
   [[menu.main]]

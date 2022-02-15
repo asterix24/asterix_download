@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .hugo_build.lock
 .DS_Store
+resources
