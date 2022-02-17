@@ -1,6 +1,12 @@
-<div class="custom-nav">
+<div class="bar">
+  <span class="bar_start b-yellow"></span>
   {{- $currentPage := . -}}
-  {{ range .Site.Menus.main -}}
-  <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-  {{- end }}
+  <span class="bar_right"
+    ><a href="{{ .RelPermalink | absLangURL }}">{{ .Name }}</a>
+  </span>
+  <span class="bar_item b-currentline b-text-light"></span>
+  <span class="bar_left"
+    ><a href="{{ .RelPermalink | absLangURL }}">{{ .Name }}</a>
+  </span>
+  <span class="bar_stop b-yellow">00:00</span>
 </div>

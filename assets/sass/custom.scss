@@ -48,23 +48,145 @@ body {
 }
 
 .custom-nav {
+    font-family:'FantasqueBold', sans-serif;
     margin: 20px auto;
+    padding: 8px;
     background: $primary-accent-color;
     width: 100%;
+    border-radius: 10px;
     a {
         background: $primary-accent-color;
-        padding: 10px;
-        color: $light-color;
+        color: $dark-color;
         text-decoration: none;
-        border-radius: 3px;
-        margin: 5px;
+        margin: 10px;
     }
     a:hover {
         background: #fff;
-        padding: 8px;
+        padding: 10px;
         color: $primary-accent-color;
         text-decoration: none;
         border: 2px solid $primary-accent-color;
     }
 }
+
+
+/* Dealing with the Powerline */
+.bar {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family:'FantasqueBold', sans-serif;
+    color: $dark-color;
+    display: flex;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.bar_item {
+    background-color: $primary-accent-color;
+    margin-right: -14px;
+    padding: 3px 1.25rem;
+    justify-content: left;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    clip-path: polygon(0 0%, 100% 0%, calc(100% - 14px) 50%, 100% 100%, 0 100%, 14px 50%);
+}
+
+.bar_left {
+    background-color: $primary-accent-color;
+    margin-right: -14px;
+    padding: 3px 1.25rem;
+    justify-content: left;
+    position: relative;
+    cursor: pointer;
+    clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 50%, 100% 100%, 0% 100%, 14px 100%, 0% 50%);
+
+    a:hover {
+        color: $bar-text;
+        background-color: $bar-selection;
+        margin-right: -14px;
+        padding: 6px 1.25rem;
+        cursor: pointer;
+        clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 50%, 100% 100%, 0% 100%, 14px 100%, 0% 50%);
+    }
+}
+
+.bar_right {
+    background-color: $primary-accent-color;
+    margin-right: -14px;
+    padding: 3px 1.25rem;
+    justify-content: left;
+    position: relative;
+    cursor: pointer;
+    clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 100% 100%, 0% 100%, 14px 50%);
+
+    a:hover {
+        color: $bar-text;
+        background-color: $bar-selection;
+        margin-right: -14px;
+        padding: 6px 1.25rem;
+        cursor: pointer;
+        clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 100% 100%, 0% 100%, 14px 50%);
+    }
+}
+
+.bar_start {
+    margin-right: -14px;
+    padding: 3px 1.25rem;
+    justify-content: left;
+    position: relative;
+    cursor: pointer;
+    background-color: $primary-accent-color;
+    clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 100% 100%, 0% 100%, 0 50%);
+
+    a:hover {
+        color: $bar-text;
+        background-color: $bar-selection;
+        margin-right: -14px;
+        padding: 6px 1.25rem;
+        cursor: pointer;
+        clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 100% 100%, 0% 100%, 0 50%);
+    }
+}
+
+.bar_stop {
+    background-color: $primary-accent-color;
+    margin-right: -14px;
+    padding: 3px 1.25rem;
+    justify-content: left;
+    position: relative;
+    cursor: pointer;
+    clip-path: polygon(14px 0%, 100% 0%, 100% 100%, 0% 100%, 14px 100%, 0% 50%);
+
+    a:hover {
+        color: $bar-text;
+        background-color: $bar-selection;
+        margin-right: -14px;
+        padding: 6px 1.25rem;
+        cursor: pointer;
+        clip-path: polygon(14px 0%, 100% 0%, 100% 100%, 0% 100%, 14px 100%, 0% 50%);
+    }
+}
+
+/* Background */
+.b-currentline{background-color: #504945;}
+.b-foreground{background-color: #fbf1c7;}
+.b-comment{background-color: #928374;}
+.b-cyan{background-color: #458588;}
+.b-green{background-color: #98971a;}
+.b-orange{background-color: #d65d0e;}
+.b-pink{background-color: #d3869b;}
+.b-purple{background-color: #b16286;}
+.b-red{background-color: #cc241d;}
+.b-yellow{background-color: #d79921;}
+
+/* Foreground */
+.b-text-light{color: $light-color;}
+.b-text-dark{color: $dark-color;}
 
