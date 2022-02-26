@@ -1,8 +1,9 @@
 {{define "main"}}
-<div class="intro" style="align-items: center">
+<div id="logoid" class="intro" style="align-items: center">
   {{if .Site.Params.main.enabled }}
   <img
-    class="image"
+    id="rdmimg"
+    class="logo-image"
     src="{{ .Site.Params.main.img | absURL }}"
     title="{{	.Site.Params.main.img_title }}"
     width="200px"
@@ -14,4 +15,7 @@
   {{ end }}
   <p>{{ .Site.Params.main.description | safeHTML }}</p>
 </div>
+<script charset="utf-8">
+    function renderimg(){fetch("https://api.unsplash.com/photos/random/?client_id=MkxrS9IWmaiKI_Waqt0efE_0npaNszZo9A0uyeSWX48&query=flower,space,technology,abstract,abstract+art&orientation=landscape&fit=clip").then(function(response){return response.json()}).then(function(data){console.log(data);let galleryItem=document.getElementById("rdmimg");galleryItem.src=data.urls.regular;galleryItem.alt=data.links.htlm;galleryItem.title=data.description})}renderimg();
+</script>
 {{ end }}
