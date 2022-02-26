@@ -41,9 +41,10 @@ body {
     word-spacing: -0.2em;
 }
 
-.image {
+.logo-image {
   width: 100%;
   height: 200px;
+  object-fit: cover;
   margin: 10px;
 }
 
@@ -90,6 +91,7 @@ body {
 .bar_item {
     background-color: $primary-accent-color;
     margin-right: -14px;
+    margin-left: -14px;
     padding: 3px 1.25rem;
     justify-content: left;
     position: relative;
@@ -115,7 +117,7 @@ body {
 
 .bar_right {
     background-color: $primary-accent-color;
-    margin-right: -14px;
+    margin-right: 0px;
     padding: 3px 1.25rem;
     justify-content: left;
     position: relative;
@@ -146,7 +148,7 @@ body {
 .bar_start_home {
     margin-right: -14px;
     padding: 3px 1.25rem;
-    justify-content: left;
+    justify-content: right;
     position: relative;
     cursor: pointer;
     background-color: $primary-accent-color;
@@ -159,7 +161,7 @@ body {
 
 .bar_stop {
     background-color: $primary-accent-color;
-    margin-right: -14px;
+    margin-right: 0px;
     padding: 3px 1.25rem;
     justify-content: left;
     position: relative;
