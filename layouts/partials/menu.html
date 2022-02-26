@@ -1,12 +1,15 @@
 <div class="bar">
-  <span class="bar_start b-yellow"></span>
+  <span class="bar_start_home b-yellow">
+    <a href="{{.Site.BaseURL}}"></a>
+  </span>
   {{- $currentPage := . -}}
-  <span class="bar_right"
-    ><a href="{{ .RelPermalink | absLangURL }}">{{ .Name }}</a>
+  {{ range .Site.Menus.main -}}
+  <span class="{{.Pre}} {{.Post}}">
+    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
   </span>
-  <span class="bar_item b-currentline b-text-light"></span>
-  <span class="bar_left"
-    ><a href="{{ .RelPermalink | absLangURL }}">{{ .Name }}</a>
-  </span>
-  <span class="bar_stop b-yellow">00:00</span>
+  {{- end }}
+  <span id="dclock" class="bar_stop b-cyan">00:00</span>
+  <script>
+  function currentTime(){let date=new Date();let hh=date.getHours();let mm=date.getMinutes();let ss=date.getSeconds();hh=(hh<10)?"0"+hh:hh;mm=(mm<10)?"0"+mm:mm;ss=(ss<10)?"0"+ss:ss;let time=hh+":"+mm+":"+ss;document.getElementById("dclock").innerText=time;var t=setTimeout(function(){currentTime()},1000)}currentTime();
+  </script>
 </div>
