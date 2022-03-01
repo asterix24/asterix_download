@@ -15,4 +15,9 @@
   {{ end }}
   <p>{{ .Site.Params.main.description | safeHTML }}</p>
 </div>
+
+{{ with .Site.GetPage "main" }}
+{{ .Content }}
+{{ end }}
+
 {{ end }}
