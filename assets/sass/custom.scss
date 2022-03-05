@@ -26,6 +26,26 @@ body {
     word-spacing: -0.2em;
 }
 
+figure {
+    margin: 0;
+}
+
+.image-left img {
+    display: block;
+    margin-right: 12px;
+    border-radius: 25px;
+    border: 2px solid #9d0006;
+    float: left;
+}
+
+.image-right img {
+    display: block;
+    margin-left: 12px;
+    border: 2px solid #9d0006;
+    border-radius: 25px;
+    float: right;
+}
+
 .post-title {
     font-family:'FantasqueBold', sans-serif;
     word-spacing: -0.2em;
