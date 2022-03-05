@@ -35,7 +35,7 @@ metaDataFormat= "yaml"
   img = "images/unsplash.jpeg"
   img_title = "asterix village unsplash imgage"
   icon = "" # overrwitted in partials/header.html
-  quote = "free space for ideas.."
+  quote = "..welcome to asterix village.."
   licenseUrl = ""
 
  # Social icons
