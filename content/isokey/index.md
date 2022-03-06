@@ -48,7 +48,7 @@ So to find one "normal" full isometric keyboard, I build it.
 
 Today on the market you could found all you need to make your custom keyboard, but, despite the fact that I am an Electronic Engineer, to build a keyboard fully custom is not easy. You must know mutch things, like electronics, mechanical .. and not less design..
 
-[Here](/posts/isokey/) I will describe the various steps that need to be done to build your custom keyboard.
+[Here](/post/isokey/) I will describe the various steps that need to be done to build your custom keyboard.
 
 {{< figure src="/images/qmk-badge-light.svg" width=120 >}}
 
@@ -62,7 +62,7 @@ Time ago I heard that: if you ask the price of something, that means you do not 
 
 Building your custom keyboard is expensive.. considering only the cost of various pieces, without considering how many hours of work need to do this..
 
-In my [posts](/posts/isokey/) I show you all the tricks that you need to try to save money..
+In my [posts](/post/isokey/) I show you all the tricks that you need to try to save money..
 
 Despite the money and the time that you spend, the result is very appreciated.. and is funny!
 
