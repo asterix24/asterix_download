@@ -25,9 +25,7 @@
       end
     }}"
   />
-  {{
-    end
-  }}
+  {{ end }}
   {{ if .Site.Params.main.enableKatex }}
   <link
     rel="stylesheet"
@@ -52,9 +50,7 @@
     crossorigin="anonymous"
     onload="renderMathInElement(document.body);"
   ></script>
-  {{
-    end
-  }}
+  {{ end }}
   <meta name="keywords" content="{{ .Site.Params.main.metaKeywords }}" />
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | absURL }}" />
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon-32x32.png" | absURL }}" />
@@ -65,9 +61,7 @@
   <meta name="theme-color" content="#ffffff" />
   <meta name="author" content="{{ .Site.Params.main.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {{
-    hugo.Generator
-  }}
+  {{ hugo.Generator }}
   {{ $style := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }}
   <link
     rel="stylesheet"
@@ -87,8 +81,8 @@
 
   <!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `
-  <link rel="%s" type="%s" href="%s" title="%s" />
-  ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
+
+  {{ template "_internal/google_analytics.html" . }}
 </head>
