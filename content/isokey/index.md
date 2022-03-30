@@ -37,14 +37,14 @@ That all to say that a common keyboard inherits from legacy mechanical typewrite
 
 {{< figure src="/images/isokey1.png" width=300 class="image-right image-board" >}}
 
-## Why you not buy one done?
+## Why didn't you buy done?
 
 Sure this is a good question.. but the reply is simply too: I did not find it to buy..
 
 This i not really true, becouse ther are some isometric keyboards I could buy, but they are very  customized, or with minimal layout (60%, 45%..).
 So to find one "normal" full isometric keyboard, I build it.
 
-## How?
+## How you did that?
 
 Today on the market you could found all you need to make your custom keyboard, but, despite the fact that I am an Electronic Engineer, to build a keyboard fully custom is not easy. You must know mutch things, like electronics, mechanical .. and not less design..
 
@@ -54,7 +54,7 @@ Today on the market you could found all you need to make your custom keyboard, b
 
 ---
 
-## How much cost it?
+## How much does it cost?
 
 {{< figure src="/images/isokey2.png" width=500 class="image-right image-board" >}}
 
