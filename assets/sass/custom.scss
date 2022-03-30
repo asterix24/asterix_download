@@ -30,6 +30,10 @@ figure {
     margin: 0;
 }
 
+.title {
+    margin-top: 25px;
+}
+
 .image-board img {
     border-radius: 25px;
     border: 2px solid #458588;
@@ -95,8 +99,47 @@ figure {
     }
 }
 
+.custom-label {
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 10px;
+    width: 40px;
+    transform: scale(1.1);
+    margin: 0px;
+    .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 17px;
+        width: 17px;
+        transform: translateX(28px);
+        transition: transform 0.2s linear;
+    }
+	svg {
+        height: 15px;
+        color: #f39c12;
+	}
+}
+
+.checkbox:checked + .custom-label .ball {
+    transform: translateX(0px);
+}
+
+
 
 /* Dealing with the Powerline */
+.head-bar {
+    overflow: hidden;
+    position: fixed;
+    width: 50%;
+}
+
 .bar {
     margin-top: 0.5rem;
     font-size: 0.9rem;
@@ -210,6 +253,8 @@ figure {
 .b-purple{background-color: #b16286;}
 .b-red{background-color: #cc241d;}
 .b-yellow{background-color: #d79921;}
+.b-black{background-color: $dark-color;}
+.b-light{background-color: $light-color;}
 
 /* Foreground */
 .b-text-light{color: $light-color;}
