@@ -47,6 +47,10 @@ figure {
     float: right;
 }
 
+.image-bg-light img {
+    background: $light-color;
+}
+
 .post-title {
     font-family:'FantasqueBold', sans-serif;
     word-spacing: -0.2em;
