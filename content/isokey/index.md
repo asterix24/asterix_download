@@ -13,7 +13,7 @@ author = "asterix"
 *Isometric KeyBoard*
 
 
-{{< figure src="/images/isokey_profile.png" width=400 class="image-left image-board" >}}
+{{< figure src="/images/isokey10.png" width=400 class="image-left image-board" >}}
 
 ## What is?
 
@@ -35,9 +35,9 @@ That all to say that a common keyboard inherits from legacy mechanical typewrite
 
 ---
 
-{{< figure src="/images/isokey1.png" width=300 class="image-right image-board" >}}
+{{< figure src="/images/isokey18.png" width=300 class="image-right image-board" >}}
 
-## Why didn't you buy done?
+## Why didn’t you buy it already made?
 
 Sure this is a good question.. but the reply is simply too: I did not find it to buy..
 
@@ -64,5 +64,5 @@ Building your custom keyboard is expensive.. considering only the cost of variou
 
 In my [posts](/post/isokey/) I show you all the tricks that you need to try to save money..
 
-Despite the money and the time that you spend, the result is very appreciated.. and is funny!
+Despite the money and the time that you spend, the result is very appreciated.. and is fun!
 
