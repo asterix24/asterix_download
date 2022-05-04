@@ -20,6 +20,17 @@ defaultExtension= "html"
 # hugo new command. "toml", "yaml", or "json"
 metaDataFormat= "yaml"
 
+defaultContentLang = 'en'
+[languages]
+  [languages.it]
+    contentDir = 'content/it'
+    languageName = 'Ita'
+    weight = 1
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'Eng'
+    weight = 2
+
 [taxonomies]
   tag      = "tags"
   category = "categories"
