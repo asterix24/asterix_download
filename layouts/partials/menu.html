@@ -1,7 +1,7 @@
 <div class="head-bar">
     <div class="bar">
-        <span  id="dclock" class="bar_start_home b-red">
-            <a href="{{.Site.BaseURL}}">00:00</a>
+        <span  class="bar_start_home b-red">
+            <a href="{{.Site.BaseURL}}">Home&nbsp;</a><span id="dclock">00:00</span> 
         </span>
         {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
@@ -11,10 +11,13 @@
         {{- end }}
 
         <span class="bar_left b-yellow">
-        {{- $currentPage := . -}}
+        {{ if .IsTranslated }}
         {{ range .Translations }}
             <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
         {{ end}}
+        {{ else }}
+        Lang
+        {{ end }}
         </span>
         <span id="barStop" class="bar_stop b-black">
           <input type="checkbox" class="checkbox" id="chk" />
