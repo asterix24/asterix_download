@@ -130,3 +130,4 @@ dmypy.json
 .hugo_build.lock
 .DS_Store
 resources
+public/
