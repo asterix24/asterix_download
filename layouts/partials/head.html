@@ -83,4 +83,11 @@
   {{ end -}}
 
   {{ template "_internal/google_analytics.html" . }}
+
+  {{ if .IsTranslated }}
+	{{ range .Translations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+  {{ end }}
+
 </head>

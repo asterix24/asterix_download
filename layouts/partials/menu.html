@@ -1,7 +1,7 @@
 <div class="head-bar">
     <div class="bar">
-        <span class="bar_start_home b-red">
-            <a href="{{.Site.BaseURL}}"></a>
+        <span  id="dclock" class="bar_start_home b-red">
+            <a href="{{.Site.BaseURL}}">00:00</a>
         </span>
         {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
@@ -10,7 +10,12 @@
         </span>
         {{- end }}
 
-        <span id="dclock" class="bar_left b-yellow">00:00</span>
+        <span class="bar_left b-yellow">
+        {{- $currentPage := . -}}
+        {{ range .Translations }}
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end}}
+        </span>
         <span id="barStop" class="bar_stop b-black">
           <input type="checkbox" class="checkbox" id="chk" />
             <label class="custom-label" for="chk">
@@ -19,7 +24,6 @@
             <div class="ball"></div>
             </label>
         </span>
-
       <script>
     "use strict";
       function currentTime(){let date=new Date();let hh=date.getHours();let mm=date.getMinutes();let ss=date.getSeconds();hh=(hh<10)?"0"+hh:hh;mm=(mm<10)?"0"+mm:mm;ss=(ss<10)?"0"+ss:ss;let time=hh+":"+mm+":"+ss;document.getElementById("dclock").innerText=time;var t=setTimeout(function(){currentTime()},1000)}currentTime();
