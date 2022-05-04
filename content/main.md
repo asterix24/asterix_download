@@ -14,9 +14,10 @@ short fantasy stories that come to mind..
 
 ### Isokey Keyboard
 
-{{< figure src="/images/isokey21.png" width=80% class="image-board image-center" >}}
 
- Fully isometric keyboard, with num pad and some extra key, [give a look](/isokey "isokey")!
+{{< figure src="/images/isokey21.png" width=80% class="image-board image-center" >}}
+Fully isometric keyboard, with num pad and some extra key, [give a look](/isokey "isokey")!
+
 
 ------
 

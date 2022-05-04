@@ -38,8 +38,7 @@ Let's see the main feature of isometric keyboard:
 {{< figure src="/images/isokey-extra11.png" width=20% class="image-right image-board image-bg-light" >}}
 
 The Isokey is based on a 105 iso layout, and to add more functionality, the layout was extended to 120 switches.
-All keys are programmable via [qmk firmware](https://github.com/asterix24/qmk_firmware), that allow the user to define custom layers he wants. The layers are multi-levels and we can switch between layers by pressing one programmated key. Layers are stacked and can define only fews keys, leaving the other mapped keys defined as the main layout.
-
+All keys are programmable via [qmk firmware](https://github.com/asterix24/qmk_firmware), that allow the user to define custom layers. The layers are multi-levels and we can switch between layers by pressing one programmated key. The user defines its key maps on layers and because they are stacked, you could define only few keys, that replace the base map ones.
 {{< figure src="/images/isokey-extra1.png" width=25% class="image-left image-board image-bg-light" >}}
 
 The Isokey also has extra keys placed on the left of the keyboard and above the arrow keys. This is because the user could hold the mouse with right hand, and have the left hand free to use a pre-set macro for his preferite apps.
@@ -56,7 +55,7 @@ Other than that, the Gateron is less expensive than cherry, when I bought it I p
 
 {{< figure src="/images/isokey13.png" width=40% class="image-left image-board image-bg-light" >}}
 
-Keycaps are a wide argument.. I will dedicate one post..
+Keycaps are a wide argument.. I will do separate post..
 The main problem that I found when choosing the keycaps was the availability.. This is because the majority of selled keyboards haven't an isometric layout, so that heavily affects the choice. Another problem was the price.. obvious when we want design or custom .. the price will grow..  
 So, after hours spent searching for a keycap, I chose the XDA profile. The XDA profile is a DSA profile, but with more height. The other advantage of these keycaps is that they are flat, and don't have a row profile. Fortunately, there is more than one company that made these keys,  so I found colored caps without labels on and all sizes..
 
@@ -69,7 +68,7 @@ Chosen keycaps I could start to draw my layout..
 
 My daily job is to design and develop embedded systems.. making a keyboard is not hard for me..
 
-So, first I draw and define the layout, and then I start to make the pcbs that hold switches and cpu.
+.. first I define the layout and keyboard shape, and then I start to make the pcbs that hold switches and cpu.
 The CPU module I chose to leave out of the main plate, so If you want you can change it with different micro or architecture you can do it. I saw on internet you could find all kind of module powerfully or with strange feature, so I decided to use on of this, in particular: [WeAct Black Pill V2.0](https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html), this module is based on a STM32F4 microcontroller of ST. I like it, because it has some useful features, like the embedded DFU.. (I will write a post on it..)
 Together with the cpu module, on plate I also put an eeprom ic, and the led driver. The led driver could be programm to do led effects, without any cpu cycle. The eeprom memory needs to keep the user configuration, like the extra key value, or other things, like the keystroke number.
 
