@@ -1,27 +1,28 @@
 +++
 title = "About"
 description = "Who I am?"
-aliases = ["about-us", "about-asterix", "contact"]
+aliases = ["about-us", "about-asterix", "contatti"]
 author = "asterix"
 +++
 
-# Who I am?
+# Chi sono?
 ---
 
 {{< figure src="/images/asterix.png" width=200 class="image-right" >}}
 
-I am an Electronic Engineer, that's all.
+I sono un Ingeniere Elettronico.. nulla di più..
 
-What about an Engineer?
+## Cosa dire di un Ingeniere?
 
-He likes science, technology, astronomy and space..
+Gli piace la scienza, la tecnologia, l'astronomia e lo spazio..
 
-His job is to project and develop Embedded systems, and lives inside open source word..
-Sometimes he must use windows.. but he is not happy with this.. unfortunately the most CADs runs on win platform.. and so he must use it..
-when he did not use a CAD he like to use MacOs (first love, since 1997) and linux..
-He also said that those who use the shell are not old, but more proficient..
+Svivuppa sistemi embedded per lavoro, e vive nel modo opensource..
+a volte deve usare windows.. ma non è molto contento di questa cosa.. purttro alcuni con tool che lavora funzionano solo su questa piattaforma..
 
-Vim, or NeoVim is the only editor that people should use..
+Quando non deve usare windows, gli piace usare MacOs (il suo amore dal 1997) e linux.. e
+spesso dice che chi usa la shell non è vecchio ma più produttivo..
 
-Last, not least, he likes history and art..
+Vim o NeoVim sono i soli editor che si possono usare..
+
+Come ultima cosa, e non da meno, gli piache la storia e l'arte..
 

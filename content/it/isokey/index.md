@@ -28,47 +28,56 @@ le comuni tastiere commericiali..
 
 ## Perchè?
 
-Quando ti guardi le mani, noti qualcosa di strano? vedi le dite non sono diritte?
+Perchè  costruire una tastiera isometrica?
 
-Se apri e chiudi le mani, le tue dita fanno percorsi non lineari?
+Facciamo un passo indietro..
 
+Le tastiere comuni sono eredità delle vecchie macchine da scrivere meccaniche, che funzionavano con un martelletto meccanico. Ve le ricordate?
+In queste macchine da scrivere, per garantire che il timbro imprimesse correttamente il carattere sulla pagina e non si inceppasse, si dovette usare qualche accorgimento.
+Innanzi tutto, sulla tastiera le lettere non furono messe in ordine alfabetico, ma fu usata una disposizione - quella QWERTY - meno intuitiva, per evitare che la velocità di digitazione sui tasti fosse troppo elevata. Inoltre, gli ingegneri dovettero disallineare i tasti, proprio per tenere conto della dimensione fisica del martelletto meccanico e per permettergli di avere abbastanza spazio per viaggiare sulla carta.
+Tutto questo era vero e sensato fino a quando la macchina da scrivere era meccanica, ma ora con i computer il problema non si pone più.
 
-When you see your hands, you see something wrong? Do you have a non-straight finger?
-
-Have you noticed that when you open and close your hands, the fingers move lineary?
-
-That all to say that a common keyboard inherits from legacy mechanical typewriters. This is because in the past, the mechanical typewriter had building trouble, and to guarantee the stamp to correctly impress the char on the page, they should use some tricks. In this way, the engineers shifts keys to allow the mechanical hammer to have a fisical dimension and to have enough space to travel to paper. This was true until the typewriter was mechanical, but now with computers, this is not more true, and so we can take in account that the people's hands are straight and to have more comfortable keyboard to use.
+Quindi possiamo prendere in considerazione una tastiera che abbia i tasti perfettamente allineati, perché può risultare più comoda da usare visto che le mani delle persone sono diritte.
 
 ---
 
 {{< figure src="/images/isokey18.png" width=300 class="image-right image-board" >}}
 
-## Why didn’t you buy it already made?
+## Perchè non comprarla già fatta?
 
-Sure this is a good question.. but the reply is simply too: I did not find it to buy..
+Questa è una buona domanda.. ma anche la risposta è semplice: non ce ne sono da comprare..
 
-This i not really true, becouse ther are some isometric keyboards I could buy, but they are very  customized, or with minimal layout (60%, 45%..).
-So to find one "normal" full isometric keyboard, I build it.
+In realtà qualcosa sul mercato qualcosa si trova.. ma sono cose molto personalizzate oppure sono hanno layout minimali (60%, 45%, ecc)
 
-## How you did that?
+Quindi, se uno vuole una tastiera "normale", con tutti i tasti l'invio iso e il tastierino
+numerico.. allora le cose cambiano molto..
 
-Today on the market you could found all you need to make your custom keyboard, but, despite the fact that I am an Electronic Engineer, to build a keyboard fully custom is not easy. You must know mutch things, like electronics, mechanical .. and not less design..
+## Come si fa?
 
-[Here](/post/isokey/) I will describe the various steps that need to be done to build your custom keyboard.
+Oggigiorno sul mercato si trova di tutto e realizzare una tastiere completamente
+personalizzata non è una cosa impossibile.. ma nonostante di lavoro sviluppo e progetto
+sistemi embedded, creare una tastiera da zero non è proprio una passeggiata.. bisogna
+avere nozioni su un sacco di argomenti, come elettronica, meccanica.. e non meno fantasia
+e .. design!
+
+[Qui](/post/isokey/) Descriverò tutti i passaggi per creare la propria tastiera personalizzata.
 
 {{< figure src="/images/qmk-badge-light.svg" width=120 >}}
 
 ---
 
-## How much does it cost?
+## Quanto costa?
 
 {{< figure src="/images/isokey2.png" width=500 class="image-right image-board" >}}
 
-Time ago I heard that: if you ask the price of something, that means you do not have enough money to buy it..
+Tempo avevo sentito: se voui comprare qualcosa e chiedi quanto costa, molto probabilmente
+non te lo puoi permettere..
 
-Building your custom keyboard is expensive.. considering only the cost of various pieces, without considering how many hours of work need to do this..
+Costruirsi una tastiera potrebbe essere qualocosa di costoso.. basta pensare banalmente al
+numero di tasti che ci sono..
 
-In my [posts](/post/isokey/) I show you all the tricks that you need to try to save money..
+Nei [posts](/post/isokey/) vi farò vedere come risparmiare il più possibile..
 
-Despite the money and the time that you spend, the result is very appreciated.. and is fun!
+Nonostante i soldi spesi.. senza considerare il tempo.. il risultato è impagabile.. e
+soprattutto è divertente!
 

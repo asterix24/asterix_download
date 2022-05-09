@@ -2,7 +2,7 @@
 # and drop a star while you're at it. ;)
 baseurl = "https://blog.asterix.cloud/"
 title = "asterix village"
-languageCode = "en-us"
+languageCode = "it-IT"
 paginate = "10" # Number of posts per page
 #disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "G-5S9WYE1Z8Y"
@@ -20,7 +20,7 @@ defaultExtension= "html"
 # hugo new command. "toml", "yaml", or "json"
 metaDataFormat= "yaml"
 
-defaultContentLang = 'en'
+defaultContentLang = 'it'
 [languages]
   [languages.it]
     contentDir = 'content/it'
