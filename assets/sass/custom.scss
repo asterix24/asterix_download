@@ -109,7 +109,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 4px;
     height: 10px;
     width: 40px;
     transform: scale(1.1);
@@ -164,7 +164,7 @@ figure {
     background-color: $primary-accent-color;
     margin-right: -14px;
     margin-left: -14px;
-    padding: 3px 1.25rem;
+    padding: 4px 1.25rem;
     justify-content: left;
     position: relative;
     cursor: pointer;
@@ -175,7 +175,7 @@ figure {
 .bar_left {
     background-color: $primary-accent-color;
     margin-right: -14px;
-    padding: 3px 1.25rem;
+    padding: 4px 1.25rem;
     justify-content: left;
     position: relative;
     cursor: pointer;
@@ -189,8 +189,8 @@ figure {
 
 .bar_right {
     background-color: $primary-accent-color;
-    margin-right: 0px;
-    padding: 3px 1.25rem;
+    margin-right: -14px;
+    padding: 4px 1.25rem;
     justify-content: left;
     position: relative;
     cursor: pointer;
@@ -204,7 +204,7 @@ figure {
 
 .bar_start {
     margin-right: -14px;
-    padding: 3px 1.25rem;
+    padding: 4px 1.25rem;
     justify-content: left;
     position: relative;
     cursor: pointer;
@@ -219,7 +219,7 @@ figure {
 
 .bar_start_home {
     margin-right: -14px;
-    padding: 3px 1.25rem;
+    padding: 4px 1.25rem;
     justify-content: right;
     position: relative;
     cursor: pointer;
@@ -234,7 +234,7 @@ figure {
 .bar_stop {
     background-color: $primary-accent-color;
     margin-right: 0px;
-    padding: 3px 1.25rem;
+    padding: 4px 1.25rem;
     justify-content: left;
     position: relative;
     cursor: pointer;

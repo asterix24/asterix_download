@@ -1,8 +1,8 @@
 # Hey, thanks for using my theme. If you like this theme,checkout my repo (https://gitlab.com/avron/gruvhugo"
 # and drop a star while you're at it. ;)
-baseurl = "https://blog.asterix.cloud/"
+baseURL = "https://blog.asterix.cloud/"
 title = "asterix village"
-languageCode = "it-IT"
+languageCode = "it"
 paginate = "10" # Number of posts per page
 #disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "G-5S9WYE1Z8Y"
@@ -20,149 +20,149 @@ defaultExtension= "html"
 # hugo new command. "toml", "yaml", or "json"
 metaDataFormat= "yaml"
 
-defaultContentLang = 'it'
+DefaultContentLanguage = 'it'
 [languages]
-  [languages.it]
-    contentDir = 'content/it'
-    languageName = 'Ita'
-    weight = 1
-  [languages.en]
-    contentDir = 'content/en'
-    languageName = 'Eng'
-    weight = 2
+    [languages.it]
+        contentDir = 'content/it'
+        languageName = '🇮🇹'
+        weight = 10
+    [languages.en]
+        contentDir = 'content/en'
+        languageName = '🇺🇸'
+        weight = 1
 
 [taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
+    tag      = "tags"
+    category = "categories"
+    series   = "series"
 
 [params.main]
-  enabled = true
-  enableKatex = true
-  metaKeywords = ""
-  headerTitle = "asterix village"
-  copyright = "© Copyright 2022 asterix24@gmail.com"
-  name = "asterix"
-  img = "images/unsplash.jpeg"
-  img_title = "asterix village unsplash imgage"
-  icon = "" # overrwitted in partials/header.html
-  quote = ""
-  licenseUrl = ""
+    enabled = true
+    enableKatex = true
+    metaKeywords = ""
+    headerTitle = "asterix village"
+    copyright = "© Copyright 2022 asterix24@gmail.com"
+    name = "asterix"
+    img = "images/unsplash.jpeg"
+    img_title = "asterix village unsplash imgage"
+    icon = "" # overrwitted in partials/header.html
+    quote = ""
+    licenseUrl = ""
 
- # Social icons
-  [[params.social]]
-    name = "gitlab"
-    url  = "https://gitlab.com/asterix24"
+    # Social icons
+    [[params.social]]
+        name = "gitlab"
+        url  = "https://gitlab.com/asterix24"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:asetrix24@gmail.com"
+    [[params.social]]
+        name = "email"
+        url  = "mailto:asetrix24@gmail.com"
 
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/asterix24"
+    [[params.social]]
+        name = "github"
+        url  = "https://github.com/asterix24"
 
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/asterix24"
+    [[params.social]]
+        name = "linkedin"
+        url  = "https://www.linkedin.com/in/asterix24"
 
 [params.style]
-  # add path to custom CSS files here
-  custom_css = []
-  # add path to custom SCSS files here
-  custom_scss = ['sass/custom.scss']
+    # add path to custom CSS files here
+    custom_css = []
+    # add path to custom SCSS files here
+    custom_scss = ['sass/custom.scss']
 
 [menu]
-  [[menu.main]]
-    identifier = "isokey"
-    name       = "ISOKEY"
-    url        = "isokey"
-    pre        = "bar_right"
-    post       = "b-purple"
-    weight     = -100
+    [[menu.main]]
+        identifier = "menu_bar"
+        name       = "00:00:00"
+        url        = ""
+        pre        = "bar_item bar_center"
+        post       = "b-currentline b-text-light"
+        weight     = 1
 
-  [[menu.main]]
-    identifier = "menu_bar"
-    name       = ""
-    url        = ""
-    pre        = "bar_item"
-    post       = "b-currentline"
-    weight     = 1
+    [[menu.main]]
+        identifier = "isokey"
+        name       = "ISOKEY"
+        url        = "isokey"
+        pre        = "bar_right"
+        post       = "b-purple"
+        weight     = -100
 
-  [[menu.main]]
-    identifier = "posts"
-    name       = "POSTS"
-    url        = "post/"
-    pre        = "bar_left"
-    post       = "b-orange"
-    weight     = 2
+    [[menu.main]]
+        identifier = "posts"
+        name       = "POSTS"
+        url        = "post/"
+        pre        = "bar_left"
+        post       = "b-orange"
+        weight     = 3
 
-  [[menu.main]]
-    identifier = "about"
-    name       = "ABOUT"
-    url        = "about"
-    pre        = "bar_left"
-    post       = "b-green"
-    weight     = 3
+    [[menu.main]]
+        identifier = "about"
+        name       = "ABOUT"
+        url        = "about"
+        pre        = "bar_left"
+        post       = "b-green"
+        weight     = 4
 
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
-  [markup.asciidocExt]
-    backend = "html5"
-    docType = "article"
-    extensions = []
-    failureLevel = "fatal"
-    noHeaderOrFooter = true
-    safeMode = "unsafe"
-    sectionNumbers = false
-    trace = false
-    verbose = true
-    workingFolderCurrent = false
-    [markup.asciidocExt.attributes]
-  [markup.blackFriday]
-    angledQuotes = false
-    footnoteAnchorPrefix = ""
-    footnoteReturnLinkContents = ""
-    fractions = true
-    hrefTargetBlank = false
-    latexDashes = true
-    nofollowLinks = false
-    noreferrerLinks = false
-    plainIDAnchors = true
-    skipHTML = false
-    smartDashes = true
-    smartypants = true
-    smartypantsQuotesNBSP = false
-    taskLists = true
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      attribute = true
-      autoHeadingID = true
-      autoHeadingIDType = "github"
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = false
-      xhtml = false
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "monokai"
-    tabWidth = 4
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+    defaultMarkdownHandler = "goldmark"
+    [markup.asciidocExt]
+        backend = "html5"
+        docType = "article"
+        extensions = []
+        failureLevel = "fatal"
+        noHeaderOrFooter = true
+        safeMode = "unsafe"
+        sectionNumbers = false
+        trace = false
+        verbose = true
+        workingFolderCurrent = false
+        [markup.asciidocExt.attributes]
+    [markup.blackFriday]
+        angledQuotes = false
+        footnoteAnchorPrefix = ""
+        footnoteReturnLinkContents = ""
+        fractions = true
+        hrefTargetBlank = false
+        latexDashes = true
+        nofollowLinks = false
+        noreferrerLinks = false
+        plainIDAnchors = true
+        skipHTML = false
+        smartDashes = true
+        smartypants = true
+        smartypantsQuotesNBSP = false
+        taskLists = true
+        [markup.goldmark]
+            [markup.goldmark.extensions]
+                definitionList = true
+                footnote = true
+                linkify = true
+                strikethrough = true
+                table = true
+                taskList = true
+                typographer = true
+            [markup.goldmark.parser]
+                attribute = true
+                autoHeadingID = true
+                autoHeadingIDType = "github"
+            [markup.goldmark.renderer]
+                hardWraps = false
+                unsafe = false
+                xhtml = false
+            [markup.highlight]
+                codeFences = true
+                guessSyntax = false
+                hl_Lines = ""
+                lineNoStart = 1
+                lineNos = false
+                lineNumbersInTable = true
+                noClasses = true
+                style = "monokai"
+                tabWidth = 4
+            [markup.tableOfContents]
+                endLevel = 3
+                ordered = false
+                startLevel = 2

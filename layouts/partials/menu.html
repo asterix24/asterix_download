@@ -1,24 +1,27 @@
 <div class="head-bar">
     <div class="bar">
-        <span  class="bar_start_home b-red">
-            <a href="{{.Site.BaseURL}}">Home&nbsp;</a><span id="dclock">00:00</span> 
+        <span  class="bar_start_home b-cyan">
+            <a href="{{.Site.BaseURL}}">Home&nbsp;</a>
+        </span>
+        <span class="bar_right b-yellow">
+        {{ if .IsTranslated }}
+            {{ range .Translations }}
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end}}
+        {{ else }}
+            Lang
+        {{ end }}
         </span>
         {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
         <span class="{{.Pre}} {{.Post}}">
-            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            {{ if eq .Identifier "menu_bar" }}
+                <center><span id="dclock">{{ .Name }}</span></center>
+            {{ else }}
+                <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            {{ end}}
         </span>
         {{- end }}
-
-        <span class="bar_left b-yellow">
-        {{ if .IsTranslated }}
-        {{ range .Translations }}
-            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-        {{ end}}
-        {{ else }}
-        Lang
-        {{ end }}
-        </span>
         <span id="barStop" class="bar_stop b-black">
           <input type="checkbox" class="checkbox" id="chk" />
             <label class="custom-label" for="chk">
