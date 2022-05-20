@@ -1,30 +1,21 @@
 +++
 title = "Asterix Download"
-description = "Pensieri, racconti e altro.."
+description = "Thoughts, stories and more.."
 author = "asterix"
 +++
 
+# 👋 Hello folks!
 
+Welcome to asterix.cloud!
 
-  <p>Hi folks,</p>
-  <p>.. welcome to asterix.cloud ..</p>
-  <p>
-    This is my site, where you could see my projects and sometimes you can read
-    short fantasy stories that come to mind..
-  </p>
-  <hr />
-  <h3 id="isokey-keyboard">Isokey Keyboard</h3>
-  <p>
-    <figure class="image-board image-center">
-      <img src="/images/isokey21.png" width="80%" />
-    </figure>
-    <div>
-    Fully isometric keyboard, with num pad and some extra key, <a href="/isokey" title="isokey">give a look</a>!
-    </div>
-  </p>
-  <hr />
-  <h3 id="random-stories">Random Stories</h3>
-  <p>
-    Stories and much more. Fantasy, technical posts on any arguments..
-    <a href="/posts" title="random">go there</a>
-  </p>
+This is my site, here you will be able to find my projects and things I like to write....
+
+## Isokey Keyboard
+
+{{< figure src="/images/isokey21.png" width=80% class="image-board image-center" >}}
+
+The full ISO Isometric keyboard, with a numeric keypad and extra keys! [take a look](/isokey)
+
+## Stories and more
+
+Posts, stories and more... [go here](/posts)

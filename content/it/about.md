@@ -16,13 +16,10 @@ I sono un Ingeniere Elettronico.. nulla di più..
 
 Gli piace la scienza, la tecnologia, l'astronomia e lo spazio..
 
-Svivuppa sistemi embedded per lavoro, e vive nel modo opensource..
-a volte deve usare windows.. ma non è molto contento di questa cosa.. purttro alcuni con tool che lavora funzionano solo su questa piattaforma..
+È affascinato dal mondo OpenSource e dai sui principi, per lavoro le usa abitualmente.. anche se a volte è costretto ad usare windows..
 
-Quando non deve usare windows, gli piace usare MacOs (il suo amore dal 1997) e linux.. e
-spesso dice che chi usa la shell non è vecchio ma più produttivo..
+Quando non deve usare windows, gli piace usare MacOs (il suo amore dal 1997) e linux.. e spesso dice che chi usa la shell non è vecchio ma più produttivo..
 
 Vim o NeoVim sono i soli editor che si possono usare..
 
 Come ultima cosa, e non da meno, gli piache la storia e l'arte..
-

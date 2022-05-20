@@ -1,9 +1,9 @@
 +++
 author = "asterix"
-title = "IsoKey Tecnical Specification"
+title = "IsoKey Technical Specification"
 date = "2022-03-30"
 description = "Isokey keyboard technical specification"
-draft = false
+draft = true
 tags = [
     "isokey",
     "keyboard",
@@ -12,84 +12,91 @@ tags = [
 ]
 +++
 
-# Panoramica
+# Overview
+---
 
-La tastiera IsoKey è una tastiera "stadard" ISO 105 tasti, dove i tasti sono allineati e
-disposti a griglia e le principali caratteristiche sono:
+The IsoKey keyboard is a 105-key ISO "stadard" keyboard, where the keys are aligned,
+arranged in a grid.
 
-* [120 Tasti](#tasti)
-* 14 tasti extra prgrammabili
+ The main features are:
+
+* [120 Keys](#keys).
+* 14 extra programmable keys
 * [XDA Keycap profile](#keycaps)
-* Spazio diviso
+* Split space
 * Enter ISO!
-* [Modulo CPU sostituibilie](#cpu)
-* Completamente programmabile con [qmk firmware](https://github.com/asterix24/qmk_firmware)
-* 4 RGB led programmbili
-* Led Engine programmabili
-* Memoria EEProm per salvare la configurazione
+* [Replaceable CPU module](#cpu)
+* Fully programmable with [qmk firmware](https://github.com/asterix24/qmk_firmware)
+* 4 programmable RGB leds
+* Programmable led engine
+* EEProm memory to save configuration
 * USB type-C
-* Chassis in plexigrass verniciata con vernicia acrilica
-* Frame in alluminio tagliato a laser
+* Plexigrass chassis painted with acrylic varnish
+* Laser cut aluminum frame
 
 
 {{< figure src="/images/isokey_all.png" width=100% class="image-right image-board image-bg-light" >}}
 
-## Tasti
+## Keys
+---
 
 {{< figure src="/images/isokey-extra11.png" width=20% class="image-right image-board image-bg-light" >}}
 
-La tastiera è basata su un layout standard ISO a 105 tasti e per aggiungere più
-funzionalità sono stati aggiungi più tasti, fino a 120.
+The keyboard is based on a standard 105-key ISO layout, and to add more
+functionality more keys have been added for a total of 120.
 
-Grazie alla flessibilità del [qmk firmware](https://github.com/asterix24/qmk_firmware) si
-possono mappare a piacimento tutti i tasti della tastiera, oltre a questo qmk gestisce più layout. I layout si possono attivare tramite tasti progrmmati e/o sequenze di tasti.
+Thanks to the flexibility of the [qmk firmware](https://github.com/asterix24/qmk_firmware) you can
+can map all keys of the keyboard at will, besides this qmk manages multiple layouts. The layouts can be activated by programmed keys and/or key sequences.
 
 {{< figure src="/images/isokey-extra1.png" width=25% class="image-left image-board image-bg-light" >}}
 
-La IsoKey ha dei tasti in più messi sulla sinistra della tastiera. Questo per dare la
-possibilità l'utente di potere definire delle macro e/o funzionalità aggiuntive che si
-possono attivre usando la mano sinistra, in questo modo nella mano destra si può tenere il
+The IsoKey has extra keys put on the left side of the keyboard. The intent is to give the
+possibility for the user to be able to define macros and/or additional features that can be
+can be activated using the left hand, in this way in the right hand you can keep on the
 mouse.
 
 {{< figure src="/images/gateron.png" width=20% class="image-right image-board image-bg-light" >}}
 
-IsoKey è una tastiera meccanica con switch sono di tipo cherry e, nel caso specifico la tastiera monta i [Gaterorn Brown](https://www.gateron.co/products/gateron-switch-set?variant=39452443214031), che sono clicky e non rumorosi.
+IsoKey is a mechanical keyboard with switches are cherry type and, in the specific case the keyboard mounts the [Gaterorn Brown](https://www.gateron.co/products/gateron-switch-set?variant=39452443214031), which are clicky and not noisy.
 
-I Gateron sono uno dei tanti cloni che si trovano sul mercato dei cherry mx, con un costo
-molto competitivo 0,3&euro; rispetto a ~1&euro; dei cherry.. la differenza non è molto, ma
-se considerando che ci sono 120 tasti.. il riparmio è evidente.
+The Gateron are one of the many clones that are on the market of cherry mx, but with a cost
+very competitive 0,3&euro; compared to ~1&euro; of the cherry... the difference is not much, but
+if you consider that there are 120 keys.. the saving is evident.
 
 ## Keycaps
+---
 
 {{< figure src="/images/isokey13.png" width=40% class="image-left image-board image-bg-light" >}}
 
-I keycaps hanno profilo XDA che sono basati sui DSA questo profilo che sono piatti, e non hanno distizioni per righe. Questo semplifica molto
-la realizzazione di layout. Fortunamente ci sono più produttori di questi tipo di tasti e
-si riescono a trovare sul mercato a prezzi abbordabili, colori e dimensioni assortite.
+Keycaps have XDA profile that are based on DSAs this profile that are flat, and do not have distiptions for lines. This greatly simplifies
+the creation of isometric layouts. Fortunately there are more manufacturers of these types of keycaps and this simplifies a bit
+the availability on the market ... with assortment of colors, sizes, and not least all the prices ...
 
 ## CPU
+---
 
-{{< figure src="/images/isokey12.png" width=70% class="image-right image-board image-bg-light" >}}
+{{< figure src="/images/isokey12.png" width=50% class="image-right image-board image-bg-light" >}}
 
-Il cuore della tastiera è stato affidato al modulino: [WeAct Black Pill V2.0](https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html)
+The heart of the keyboard was done by the module: [WeAct Black Pill V2.0](https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html)
 
-Questo è modulino basato su un STM32F4 dell'ST. Il modulino ha il vantaggio di essere
-economico e cosa non da poco la cpu supporta il DFU bootloader..
+This is a module based on an STM32F4 from ST. The module has the advantage of being
+cheap and what's more the CPU supports DFU bootloader....
 
-L'uso di un modulino esterno è una cosa voluta, si per un motivo estetico, ma anche per
-dare la possibilità di poterlo sostiture a piacimento.
+The use of an external module is a deliberate thing, yes for aesthetic reasons, but also to
+give the possibility to the user to replace it at will.
 
-Oltre al modulino, la tastiera prevede sulla scheda principale anche una memoria eeprom
-che il drivere per i led.
-Il driver dei led è di tipo inteligente, nel senso che si programmare delle sequenze e
-farle eseguire alla engine del driver in modo del tutto autonomo, senze intervento della
+In addition to the module, the keyboard also provides on the main board an eeprom memory
+and the driver for the LEDs.
+The LED driver is an intelligent type, in the sense that you can program sequences and have them executed by the driver's engine.
+make them execute the engine of the driver in a completely autonomous way, without intervention of the
 CPU.
 
 ## Backshell
+---
 
 {{< figure src="/images/milling_ok1.png" width=30% class="image-left image-board image-bg-light" >}}
 
-Per ridurre i costi, alcune parti della tastiera sono state realizzate con pezzi di
-recupero. Nel caso specifico, il Backshell è stato realizzato con una lastra di plexiglass
-spesso di 15mm, scavato con la fresa per consentire l'alloggiamento dell'elettronica e
-del frame che sostiene gli switch.
+To reduce costs, some parts of the keyboard were made from salvaged parts.
+In this specific case, the Backshell was made with a sheet of Plexiglass
+15mm thick, hollowed with the milling cutter to allow the housing of electronics and the frame that supports.
+The frame that supports the switches is a laser-cut aluminum plate.
