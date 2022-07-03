@@ -15,8 +15,7 @@ fantatisa partoriti dalla mia mente..
 
 {{< figure src="/images/isokey21.png" width=80% class="image-board image-center" >}}
 
-La tastiera Isometrica ISO completa, con il tastierino numerico e tasti extra! [dai una
-occhiata..](/isokey)
+La tastiera Isometrica ISO completa, con il tastierino numerico e tasti extra! [dai una occhiata..](/isokey)
 
 ## Storie e altro
 
